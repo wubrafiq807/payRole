@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition" template="/WEB-INF/tiles/template/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/template/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/tiles/template/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+	
+	<definition name="base.definition2" template="/WEB-INF/views/login.jsp">
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>
+	
+	<!-- Login Page -->
+	<definition name="login" extends="base.definition2">
+		<put-attribute name="title" value="Login Form"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="index" extends="base-definition">
+		<put-attribute name="title" value="Dashboard | PRMS" />
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+	
+	<definition name="selectCompany" extends="base-definition">
+		<put-attribute name="title" value="Select Company" />
+		<put-attribute name="body" value="/WEB-INF/views/selectCompanyForm.jsp" />
+	</definition>
+	
+	<definition name="success" extends="base-definition">
+		<put-attribute name="title" value="Operation Successfull" />
+		<put-attribute name="body" value="/WEB-INF/views/success.jsp" />
+	</definition>
+	
+	<definition name="failed" extends="base-definition">
+		<put-attribute name="title" value="Operation Failed" />
+		<put-attribute name="body" value="/WEB-INF/views/failed.jsp" />
+	</definition>
+	
+	<!-- Settings start -->
+	<definition name="departmentForm" extends="base-definition">
+		<put-attribute name="title" value="Department Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/addDepartment.jsp" />
+	</definition>
+	
+	<definition name="settingsForm" extends="base-definition">
+		<put-attribute name="title" value="Department Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/addSettings.jsp" />
+	</definition>
+	
+	<definition name="designationForm" extends="base-definition">
+		<put-attribute name="title" value="Designation Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/addDesignation.jsp" />
+	</definition>
+	
+	<definition name="addUser" extends="base-definition">
+		<put-attribute name="title" value="New User Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/addUser.jsp" />
+	</definition>
+	
+	<definition name="editUser" extends="base-definition">
+		<put-attribute name="title" value="Update Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/editUser.jsp" />
+	</definition>
+	<!-- Settings start -->
+	
+	<definition name="reagentPropertyList" extends="base-definition">
+		<put-attribute name="title" value="Reagent Property List"/>
+		<put-attribute name="body" value="/WEB-INF/views/reagentPropertyList.jsp" />
+	</definition>
+	<definition name="reagentPropertyForm" extends="base-definition">
+		<put-attribute name="title" value="Reagent Property Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/reagentPropertyForm.jsp" />
+	</definition>
+	<definition name="reagentForm" extends="base-definition">
+		<put-attribute name="title" value="Reagent  Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/reagentForm.jsp" />
+	</definition>
+	<definition name="reagentList" extends="base-definition">
+		<put-attribute name="title" value="Reagent  List"/>
+		<put-attribute name="body" value="/WEB-INF/views/reagentList.jsp" />
+	</definition>
+	
+	
+	<definition name="additionalInfoForm" extends="base-definition">
+		<put-attribute name="title" value="Additional Info Form" />
+		<put-attribute name="body" value="/WEB-INF/views/additionalInfoForm.jsp" />
+	</definition>
+	
+	<definition name="aiList" extends="base-definition">
+		<put-attribute name="title" value="Additional Info List" />
+		<put-attribute name="body" value="/WEB-INF/views/aiList.jsp" />
+	</definition>
+	
+	
+	<definition name="viewRequisition" extends="base-definition">
+		<put-attribute name="title" value="Travel Requisition Info." />
+		<put-attribute name="body" value="/WEB-INF/views/viewRequisition.jsp" />
+	</definition>	
+	
+	<definition name="addBG" extends="base-definition">
+		<put-attribute name="title" value="Add Blood Group" />
+		<put-attribute name="body" value="/WEB-INF/views/addBG.jsp" />
+	</definition>
+	<definition name="accountDashboard" extends="base-definition">
+		<put-attribute name="title" value="Account Management Dashboard" />
+		<put-attribute name="body" value="/WEB-INF/views/accountDashboard.jsp" />
+	</definition>
+	
+	<definition name="addBranch" extends="base-definition">
+		<put-attribute name="title" value="Add Brach "/>
+		<put-attribute name="body" value="/WEB-INF/views/addBranch.jsp" />
+	</definition>
+	
+	<definition name="addDistrict" extends="base-definition">
+		<put-attribute name="title" value="Add District "/>
+		<put-attribute name="body" value="/WEB-INF/views/addDistrict.jsp" />
+	</definition>
+	
+	<definition name="addHoliday" extends="base-definition">
+		<put-attribute name="title" value="Add Holiday "/>
+		<put-attribute name="body" value="/WEB-INF/views/addHoliday.jsp" />
+	</definition>
+	<definition name="addReligion" extends="base-definition">
+		<put-attribute name="title" value="Add Religion "/>
+		<put-attribute name="body" value="/WEB-INF/views/addReligion.jsp" />
+	</definition>
+	<definition name="addPaymentMonth" extends="base-definition">
+		<put-attribute name="title" value="Add Payment Month "/>
+		<put-attribute name="body" value="/WEB-INF/views/addPaymentMonth.jsp" />
+	</definition>
+	<definition name="addWeekend" extends="base-definition">
+		<put-attribute name="title" value="Add Weekend "/>
+		<put-attribute name="body" value="/WEB-INF/views/addWeekend.jsp" />
+	</definition>
+	
+	
+	<definition name="companyListAll" extends="base-definition">
+		<put-attribute name="title" value="Company List"/>
+		<put-attribute name="body" value="/WEB-INF/views/companyListAll.jsp" />
+	</definition>
+
+	<definition name="addCompany" extends="base-definition">
+		<put-attribute name="title" value="Add New Company "/>
+		<put-attribute name="body" value="/WEB-INF/views/addCompany.jsp" />
+	</definition>
+	
+	<definition name="addWorkLocation" extends="base-definition">
+		<put-attribute name="title" value="Add New Company "/>
+		<put-attribute name="body" value="/WEB-INF/views/addWorkLocation.jsp" />
+	</definition>
+	
+	<definition name="addPaySite" extends="base-definition">
+		<put-attribute name="title" value="Add PaySIte "/>
+		<put-attribute name="body" value="/WEB-INF/views/addPaySite.jsp" />
+	</definition>
+	
+	<!-- allowance start -->
+	<definition name="addAllowanceForm" extends="base-definition">
+		<put-attribute name="title" value="Allownace Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/addAllowanceForm.jsp" />
+	</definition>
+	
+	<definition name="allowanceFormList" extends="base-definition">
+		<put-attribute name="title" value="Allownace List Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/allowanceFormList.jsp" />
+	</definition>
+	
+	<definition name="allowanceFinalList" extends="base-definition">
+		<put-attribute name="title" value="Allownace Final List"/>
+		<put-attribute name="body" value="/WEB-INF/views/allowanceFinalList.jsp" />
+	</definition>
+	
+	<definition name="addAllowanceSetup" extends="base-definition">
+		<put-attribute name="title" value="Allownace Setup"/>
+		<put-attribute name="body" value="/WEB-INF/views/addAllowanceSetup.jsp" />
+	</definition>
+	
+	<definition name="addEmployee" extends="base-definition">
+		<put-attribute name="title" value="Add Employee"/>
+		<put-attribute name="body" value="/WEB-INF/views/addEmployee.jsp" />
+	</definition>
+	<definition name="employeeList" extends="base-definition">
+		<put-attribute name="title" value="Employee List"/>
+		<put-attribute name="body" value="/WEB-INF/views/employeeList.jsp" />
+	</definition>
+	<definition name="addDeductionForm" extends="base-definition">
+		<put-attribute name="title" value="leave Deduction Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/addDeductionForm.jsp" />
+	</definition>
+	<definition name="deductionFormList" extends="base-definition">
+		<put-attribute name="title" value="Employee List"/>
+		<put-attribute name="body" value="/WEB-INF/views/deductionFormList.jsp" />
+	</definition>
+	
+	<definition name="deductionFinalList" extends="base-definition">
+		<put-attribute name="title" value="Deduction Final List"/>
+		<put-attribute name="body" value="/WEB-INF/views/deductionFinalList.jsp" />
+	</definition>
+	
+	<definition name="addAdvanceForm" extends="base-definition">
+		<put-attribute name="title" value="Advance Deduction Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/addAdvanceForm.jsp" />
+	</definition>
+	
+	<definition name="advanceListForm" extends="base-definition">
+		<put-attribute name="title" value="Advance Deduction List Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/advanceListForm.jsp" />
+	</definition>
+	
+	<definition name="advanceList" extends="base-definition">
+		<put-attribute name="title" value="Advance Deduction List"/>
+		<put-attribute name="body" value="/WEB-INF/views/advanceList.jsp" />
+	</definition>
+	
+	<definition name="addDeductionSetup" extends="base-definition">
+		<put-attribute name="title" value="Set Leave Deduction"/>
+		<put-attribute name="body" value="/WEB-INF/views/addDeductionSetup.jsp" />
+	</definition>
+	
+	<definition name="addPFProfitForm" extends="base-definition">
+		<put-attribute name="title" value="Add PF Profit"/>
+		<put-attribute name="body" value="/WEB-INF/views/addPFProfitForm.jsp" />
+	</definition>
+	<definition name="pfProfitFormList" extends="base-definition">
+		<put-attribute name="title" value="Provident Fun list"/>
+		<put-attribute name="body" value="/WEB-INF/views/pfProfitFormList.jsp" />
+	</definition>
+	<definition name="pfProfitFinalList" extends="base-definition">
+		<put-attribute name="title" value="Provident Fund Final List"/>
+		<put-attribute name="body" value="/WEB-INF/views/pfProfitFinalList.jsp" />
+	</definition>	
+	<!-- allowance end -->
+	
+	<!-- salary start -->
+	<definition name="addCashPaymentEmployee" extends="base-definition">
+		<put-attribute name="title" value="Add Cash Payment Employee"/>
+		<put-attribute name="body" value="/WEB-INF/views/addCashPaymentEmployee.jsp" />
+	</definition>
+	
+	<definition name="cashPaymentEmployeeList" extends="base-definition">
+		<put-attribute name="title" value="Cash Payment List"/>
+		<put-attribute name="body" value="/WEB-INF/views/cashPaymentEmployeeList.jsp" />
+	</definition>
+	
+	<definition name="cashPaymentEmployeeListForm" extends="base-definition">
+		<put-attribute name="title" value="Cash Payment List Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/cashPaymentEmployeeListForm.jsp" />
+	</definition>
+	
+	<definition name="addAdditionalSalary" extends="base-definition">
+		<put-attribute name="title" value="Add Additinal Salary"/>
+		<put-attribute name="body" value="/WEB-INF/views/addAdditionalSalary.jsp" />
+	</definition>
+	
+	<definition name="additionalSalaryList" extends="base-definition">
+		<put-attribute name="title" value="Additonal Salary List"/>
+		<put-attribute name="body" value="/WEB-INF/views/additionalSalaryList.jsp" />
+	</definition>
+	
+	<definition name="additionalSalaryListForm" extends="base-definition">
+		<put-attribute name="title" value="Additonal Salary List Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/additionalSalaryListForm.jsp" />
+	</definition>
+	
+	<definition name="addFixedIncomeTax" extends="base-definition">
+		<put-attribute name="title" value="Add Montly Fixed Income Tax"/>
+		<put-attribute name="body" value="/WEB-INF/views/addFixedIncomeTax.jsp" />
+	</definition>
+	
+	<definition name="fixedIncomeTaxList" extends="base-definition">
+		<put-attribute name="title" value="Montly Fixed Income Tax List"/>
+		<put-attribute name="body" value="/WEB-INF/views/fixedIncomeTaxList.jsp" />
+	</definition>
+	
+	<definition name="addSalary" extends="base-definition">
+		<put-attribute name="title" value="Assign Salary To Employee"/>
+		<put-attribute name="body" value="/WEB-INF/views/addSalary.jsp" />
+	</definition>
+	
+	<definition name="salaryList" extends="base-definition">
+		<put-attribute name="title" value="Employee Salary List"/>
+		<put-attribute name="body" value="/WEB-INF/views/salaryList.jsp" />
+	</definition>
+	<!-- salary end -->
+	
+	<!-- salary process start -->
+	<definition name="empSalHistProcessForm" extends="base-definition">
+		<put-attribute name="title" value="Employee Salary Process Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/empSalHistProcessForm.jsp" />
+	</definition>
+	<!-- salary process end -->
+	
+	<!-- Absence Deduction start -->
+	
+	<definition name="addAbsenceDeduction" extends="base-definition">
+		<put-attribute name="title" value="Add Advance Deduction"/>
+		<put-attribute name="body" value="/WEB-INF/views/addAbsenceDeduction.jsp" />
+	</definition>
+	
+	<definition name="absenceDeductionListForm" extends="base-definition">
+		<put-attribute name="title" value="Advance Deduction List Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/absenceDeductionListForm.jsp" />
+	</definition>
+	
+	<definition name="absenceDeductionList" extends="base-definition">
+		<put-attribute name="title" value="Advance Deduction List"/>
+		<put-attribute name="body" value="/WEB-INF/views/absenceDeductionList.jsp" />
+	</definition>
+	<definition name="addDisverse" extends="base-definition">
+		<put-attribute name="title" value="Add Disverse Setting"/>
+		<put-attribute name="body" value="/WEB-INF/views/addDisverse.jsp" />
+	</definition>
+	<definition name="disverseList" extends="base-definition">
+		<put-attribute name="title" value="Disverse List"/>
+		<put-attribute name="body" value="/WEB-INF/views/disverseList.jsp" />
+	</definition>
+	
+	<!-- Absence Deduction end -->
+	
+	<!-- Salary Process Start -->
+	<definition name="salaryReportForm" extends="base-definition">
+		<put-attribute name="title" value="Salary Process Form"/>
+		<put-attribute name="body" value="/WEB-INF/views/salaryReportForm.jsp" />
+	</definition>
+	<!-- Salary Process end -->
+	
+	
+</tiles-definitions>
